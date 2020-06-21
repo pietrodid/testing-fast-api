@@ -1,8 +1,14 @@
-from fastapi import FastAPI, status
+<html>     
 
-app = FastAPI()
+<head> 
+
+<p> Mangooo!!!!     </p>
 
 
-@app.get("/")
-def root():
-    return {"message": "Welcome"}
+</head>
+
+
+
+ </html>
+
+
