@@ -22,6 +22,14 @@ def get_name_by_string(name: str):
 def perro_de_agua_string(name: str):
     return {"data": name}
 
-@app.get("/get_suma/{suma}")
-def get_suma_int(suma: int):
-    return{"total": suma, "a+b"}
+@app.get("/get_suma/{inta}/{intb}")
+def get_suma(inta: int, intb: int):
+    return {"total": inta + intb}
+
+@app.get("/get_division/{inta}/{intb}")
+def get_dividir(inta: int, intb: int):
+    return {"total": inta // intb}
+
+@app.get("/get_multiplicar/{inta}/{intb}")
+def get_multiplicar(inta: int, intb: int):
+    return{"total": inta * intb}
