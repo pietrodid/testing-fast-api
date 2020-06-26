@@ -1,0 +1,4 @@
+nombre: Yodwin 
+apellido: caminero 
+edad: 33 
+sexo: gay

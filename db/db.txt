@@ -1,0 +1,5 @@
+{"nombre": "carlos", "apellido": "quintero", "edad": 33, "sexo": "masculino"}
+{"nombre": "carlos", "apellido": "quintero", "edad": 33, "sexo": "masculino"}
+{"nombre": "carlos", "apellido": "quintero", "edad": 33, "sexo": "masculino"}
+{"nombre": "carlos", "apellido": "quintero", "edad": 33, "sexo": "masculino"}
+{"nombre": "carlos", "apellido": "quintero", "edad": 33, "sexo": "masculino"}

@@ -1,4 +1,7 @@
 from fastapi import FastAPI
+from .users import Usuario
+import json
+import csv
 
 app = FastAPI()
 
@@ -33,3 +36,23 @@ def get_dividir(inta: int, intb: int):
 @app.get("/get_multiplicar/{inta}/{intb}")
 def get_multiplicar(inta: int, intb: int):
     return{"total": inta * intb}
+
+@app.post("/user/")
+def get_usuario(user: Usuario):
+    f = open("./db/db.txt", "a")
+    json_user = json.dumps(user.__dict__)
+    f.write(json_user + "\n")
+    f.close()
+    return user
+
+@app.post("/new/")
+def new_user(user: Usuario): 
+    with open("./db/new.csv", "a") as csvfile:
+        writer = csv.writer(csvfile)
+        data = user.__dict__
+        print(data.values())
+        writer.writerow(data.values()) 
+ 
+    return user     
+
+
